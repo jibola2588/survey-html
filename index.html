@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+      margin: 0px;
+    
+  }
+    main{
+    
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
+    }
+    img{
+        width: 90px;
+        height: 80px;
+        margin-left: 50px;
+        }
+        .title{
+         
+            display: grid;
+         }
+        
+         #sax{
+             padding: 0px;         }
+       nav ul{
+                 list-style: none;
+             }
+    nav a{
+        text-decoration: none;
+        color: #000;
+    }
+  .sub{
+      text-align: center
+  }
+ article h3{
+     margin: 0px;
+ }
+ #btn{
+     background-color:rgb(253, 200, 25) ;
+ border: 0px;
+ padding: 5px;
+ font-weight: bold;
+ }
+ .border-1{
+     border: 1px solid black;
+     margin-top: 5px;
+     margin-bottom: 20px;
+     width: 300px;
+     padding-bottom: 10px;
+ }
+ section{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ #select{
+     background-color: rgb(253, 200, 25);
+     border: 0px;
+     padding: 5px;
+ }
+ .border-1 h4{
+     background-color:rgba(128, 128, 128, 0.099) ;
+   padding: 14px;
+   margin: 0px;
+ }
+ footer{
+     background-color: rgba(128, 128, 128, 0.219);
+ padding: 10px;
+ margin: 0px;
+ }
+ footer div{
+     text-align: end;
+ }
+ span{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 1.3rem;
+ }
+ @media screen and (min-width:476px){
+     main{
+    
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
+    }
+    img{
+        width: 90px;
+        height: 80px;
+        margin-left: 50px;
+        }
+        .title{
+         
+            display: grid;
+         }
+        
+         #sax{
+             padding: 0px;         }
+       nav ul{
+                 list-style: none;
+             }
+    nav a{
+        text-decoration: none;
+        color: #000;
+    } 
+ }
+ 
+</style>
+
+<body>
+    <main>
+        <div class="title">
+      <img src="data:image/png;base64,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" alt="">
+    <span>Original saxophone</span> 
+    </div>
+    <nav class="navbar">  
+        <ul>
+         <li><a href="#article">Feature</a></li>
+         <li><a href="#video">How it works</a></li>
+         <li><a href="#price">Pricing</a></li>
+        </ul>
+        </nav>
+        </main>
+    
+        <div class="sub">
+        <h3>Handcrafted,home-made masterpieces</h3>
+        <form action="">
+        <label for="email">
+           <input type="text" name="email" placeholder="Enter your email address" required>
+       </label><br><br><br>
+       <input type="submit" value="GET STARTED" id="btn">
+     
+    </form><br><br><br>
+    <article id="article">
+        <div class="materials">
+            <h3>Premium Materials</h3>
+            Try nivea natural fairness body lotion.The unique formula<br>
+            enriched with great ingredients offers you 4 benefits in <br>
+            one lotion,berry extracts provide a visibly fairer,even<br>
+            toned and radiant skin.
+        </div>
+        <div><br><br><br>
+            <h3>Fast Shipping</h3>
+            We shall make sure you receive your nivea and you pay<br>
+            after delivery,and we also provide free returns if you<br>
+            are not satisfied.
+        </div><br><br><br>
+        <div>
+            <h3>Quality Assurance</h3>
+            Ensure that when you purchase our product,make sure<br> you
+            check the number at the bottom to ensure its an <br>original product
+            you purchased that was delivered.
+        </div>
+        </article><br><br><br>
+    <div id="video">
+        <iframe src="https://www.youtube.com/watch?v=G7Gp9gzIHU8" frameborder="0">
+        </iframe>
+    </div><br><br><br>
+    <section>
+        <div>
+
+        <div class="border-1" id="price">
+            <h4>NATURAL FAIRNESS</h4>
+            <br>
+            <p><strong>$200</strong></p>
+            <br>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum</p><br><br>
+            <button id="select">SELECT</button>
+        </div>
+        <div class="border-1">
+            <h4>EVEN RADIANT</h4>
+            <br>
+            <p><strong>$150</strong></p>
+            <br>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum</p><br><br>
+            <button id="select">SELECT</button>
+        </div>
+        <div class="border-1">
+            <h4>EXTRA WHITENING</h4>
+            <br>
+            <p><strong>$400</strong></p>
+            <br>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum</p>
+            <p>Lorem ipsum dolor</p>
+            <p>Lorem ipsum</p><br><br>
+            <button id="select">SELECT</button>
+        </div>
+    </div>
+    </section><br><br>
+    <footer>
+        <div>
+            Privacy
+            Terms
+            Contact
+        </div>
+        <div>
+            Copyright &copy;2016
+            original
+            Saxophone
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
